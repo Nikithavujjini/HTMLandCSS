@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .input-container {
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .icon {
+            padding: 10px;
+            background: darkgrey;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+        
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+            width: 100%;
+        }
+        
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+            width: 100%;
+        }
+        
+        .input-field:focus {
+            border: 2px solid blue;
+        }
+        /* Set a style for the submit button */
+        
+        .btn {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="/action_page.php" style="max-width:500px;margin:auto">
+        <h2> Form</h2>
+
+
+        <div class="input-container">
+
+            <input class="input-field" type="text" placeholder="mail@gmail.com" name="email">
+            <i class="fa fa-envelope icon"></i>
+        </div>
+
+        <div class="input-container">
+
+            <input class="input-field" type="password" placeholder="Password" name="psw">
+            <i class="fa fa-lock icon"></i>
+        </div>
+
+        <button type="submit" class="btn">Sign-in</button>
+        <p>Forgot password?</p>
+        <div>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+        <div>
+            <a href="#" class="fa fa-google"></a>
+        </div>
+    </form>
+
+</body>
+
+</html>
